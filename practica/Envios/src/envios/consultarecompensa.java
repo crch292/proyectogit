@@ -102,7 +102,7 @@ public class consultarecompensa extends javax.swing.JFrame {
             uno.add(recompensa.getCodIniciativa());
             uno.add(recompensa.getDescripcion());
         }
-        DefaultTableModel modelo= new DefaultTableModel();
+        DefaultTableModel modelo=
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
