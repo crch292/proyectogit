@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="685EAD4A-1908-F87A-3DE0-46B5B420347D" name="Denuncia">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:29:45 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_denuncia" id="EA404476-71B7-290E-3910-B8139D3F8046">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:29:55 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="CBE47116-200E-8D82-97A4-913360AB14D9">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:30:28 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_iniciativa" id="41D8EB51-13A1-2861-3AB6-54BDF23AE460">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:30:50 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_usuario" id="21442E92-DB73-2E22-8043-1AD74EEC8CF3">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:31:15 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_iniciativa1" id="1411CD11-1241-E360-1003-2BEA3C7A7431">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:33:43 UTC</createdTime>
+<generatorID>BC6644C7-E572-D079-0709-4019B16BA71B</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>A5DB010A-395F-1E09-E921-C3F4C42DCEFB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_usuario1" id="F9C039B2-8D32-545C-11C7-B0A3C08295D2">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:36:05 UTC</createdTime>
+<generatorID>0243FA68-B220-FCEF-8ED4-EFD8716305B0</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>5D905CC3-8E8E-583C-7409-334D60F3B208</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F8719D6-80E7-3830-5805-C87994C59CE3" name="Denuncia PK">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:30:09 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EA404476-71B7-290E-3910-B8139D3F8046</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

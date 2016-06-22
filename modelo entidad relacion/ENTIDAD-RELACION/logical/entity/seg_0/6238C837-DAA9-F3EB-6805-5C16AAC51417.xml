@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6238C837-DAA9-F3EB-6805-5C16AAC51417" name="Comentario">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:52:15 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_linea_comentario" id="7250EC67-6248-8478-09F7-0F88B7AF837E">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:52:34 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="F7CA595F-9393-1356-7B66-194A96A2A2A4">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:52:56 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="EA41AD4D-537D-A6A5-D741-D3171B0A511B">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:53:16 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado_comentario" id="D29B8452-2534-DCDC-0089-5AD7521D6AFA">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:54:02 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_usuario" id="922A2FDE-AA0A-7E9B-8AC6-769B5740AB60">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:54:40 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_iniciativa" id="BBA087C9-82A3-E4C9-25D5-2E1AF0A5DE3F">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:54:54 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_usuario1" id="26E157C4-F35B-33DC-8A4E-BEA9D65E5167">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 22:02:41 UTC</createdTime>
+<generatorID>ACE6DB8A-8283-879D-D2BB-C6E36F78F939</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>5D905CC3-8E8E-583C-7409-334D60F3B208</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_iniciativa1" id="F25F42EA-CDA0-F378-2EC2-BA6AC84B55BF">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 22:02:55 UTC</createdTime>
+<generatorID>76FDCC2B-EF2F-DF53-B88E-234DDB1168D5</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>A5DB010A-395F-1E09-E921-C3F4C42DCEFB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C6828ADE-7533-30B8-7B84-7963CE267FE8" name="Comentario PK">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:52:54 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7250EC67-6248-8478-09F7-0F88B7AF837E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

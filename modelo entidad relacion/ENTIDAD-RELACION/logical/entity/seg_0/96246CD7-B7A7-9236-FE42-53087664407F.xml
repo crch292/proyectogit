@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="96246CD7-B7A7-9236-FE42-53087664407F" name="Donacion">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:49:22 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_donacion" id="DBE2FF0E-F037-FECD-24E0-33210A98A290">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:49:30 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_iniciativa" id="8B29718A-0CCC-D6EB-A6F9-C962BD4D1295">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:50:00 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="CE58F40C-39B1-77A0-28EB-0A48AFD07E36">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:50:30 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_iniciativa1" id="E4C49F0A-E0FF-5282-56E8-2944D6C008CB">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 22:15:13 UTC</createdTime>
+<generatorID>9BEF2BC1-6B7A-7CCB-C8C9-01A495E5D12E</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>A5DB010A-395F-1E09-E921-C3F4C42DCEFB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_usuario" id="2F8CBFFC-9588-D501-FD34-9EC1939D05D7">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-14 04:12:37 UTC</createdTime>
+<generatorID>31D3578B-49B6-027C-D41C-C1750BE81457</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>5D905CC3-8E8E-583C-7409-334D60F3B208</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3292DCD1-972D-80B8-BDA8-42AB8FEE3FA0" name="Donacion PK">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:49:41 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DBE2FF0E-F037-FECD-24E0-33210A98A290</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

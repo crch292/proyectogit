@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4C0A8D42-4194-9768-E3C8-9D5D9976EE18" name="Moderador">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:50:53 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_moderador" id="90C6CD68-74D5-3FA7-B03B-4DF954273587">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:51:00 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_iniciativa" id="B344A6C7-ABED-3CA5-4D82-73CBABB92C34">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:51:17 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_usuario" id="914F95C4-D56F-968F-CCC2-2A60B0BB0B62">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:51:35 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_usuario1" id="794C5108-615B-B0FF-B86B-BEF312D2F892">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 22:12:18 UTC</createdTime>
+<generatorID>7252CF75-694B-7D02-5BDF-9128157042C1</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>5D905CC3-8E8E-583C-7409-334D60F3B208</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_iniciativa1" id="53A9C417-F50A-F469-010A-3D889E245A4D">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 22:18:38 UTC</createdTime>
+<generatorID>FB13E2E9-CB20-B06D-9997-D1698FB9D9DF</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>A5DB010A-395F-1E09-E921-C3F4C42DCEFB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C09BE573-393E-6762-0D2E-D255F37A60F7" name="Moderador PK">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:51:15 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>90C6CD68-74D5-3FA7-B03B-4DF954273587</attributeRef>
+<attributeRef>914F95C4-D56F-968F-CCC2-2A60B0BB0B62</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD0B18C2-81D6-0ABD-01BF-2ED49AE1907E" name="Usuario">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:42:27 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_usuario" id="5D905CC3-8E8E-583C-7409-334D60F3B208">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:42:37 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nickname" id="A6C968F4-F53E-9BCC-5AA1-2434EFCE415D">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:42:53 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="F6AF447E-2505-52F1-6886-1DA9795E9418">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:43:15 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_nac" id="E906AB92-1B34-2A6B-CCEF-9CD29377B4FB">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:43:16 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="1165917D-448D-9B98-853B-3FDC29A26622">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:43:55 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono " id="C490AEBF-6B47-BFE6-A302-2F0363BA73EE">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:44:12 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="10A53EFB-5E93-6E17-9828-ED14CC60E39C">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:44:29 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_forma_pago" id="EA0D5A07-1DAC-91E5-8772-4693486B6A35">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-13 04:42:26 UTC</createdTime>
+<generatorID>BD49757B-4670-5787-977B-45464F59EA02</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>FCB164E5-D272-6B09-0D95-33A56620F5E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_rol" id="25B9575D-6FDF-E79D-5A96-8D9F523F55FD">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-13 04:43:09 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_rol1" id="4BC047A3-10AA-F33B-2E16-558F5144813C">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-13 04:44:37 UTC</createdTime>
+<generatorID>0BD1B459-19C6-2A1F-AC8B-14D13D2E094C</generatorID>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<referedAttribute>8EE29F00-AFA5-8569-B4ED-75D9B004BF16</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="00418B1F-C72A-45D2-D4CC-1DFC4D47A84C" name="Usuario PK">
+<createdBy>carlosrene</createdBy>
+<createdTime>2016-06-12 21:42:51 UTC</createdTime>
+<ownerDesignName>ENTIDAD-RELACION</ownerDesignName>
+<engineerTo>
+<item key="959BD881-8503-02EB-9F6D-16C418DDBCDD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5D905CC3-8E8E-583C-7409-334D60F3B208</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
