@@ -6,7 +6,9 @@
 package envios;
 import java.util.*;
 import javax.swing.table.DefaultTableModel;
-
+import javax.swing.table.*;
+import servicio.Servicioenvios;
+import javax.swing.*;
 /**
  *
  * @author carlosrene
@@ -29,43 +31,64 @@ public class consultarecompensa extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        scrollbar1 = new java.awt.Scrollbar();
         jButton1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("ENTREGA");
+        setForeground(java.awt.Color.lightGray);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
-            },
-            new String [] {
-                "codigo", "stock", "precio", "descripcion", "estado", "tipo", "cod_iniciativa"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setHeaderValue("codigo");
-            jTable1.getColumnModel().getColumn(1).setHeaderValue("stock");
-            jTable1.getColumnModel().getColumn(2).setHeaderValue("precio");
-            jTable1.getColumnModel().getColumn(3).setHeaderValue("descripcion");
-            jTable1.getColumnModel().getColumn(4).setHeaderValue("estado");
-            jTable1.getColumnModel().getColumn(5).setHeaderValue("tipo");
-            jTable1.getColumnModel().getColumn(6).setHeaderValue("cod_iniciativa");
-        }
-
-        jButton1.setText("jButton1");
+        jButton1.setText("VER RECOMPENSAS");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "cod_recompensa", "stock", "precio_unidad", "descripcion", "tipo", "estado", "cod_iniciativa", "entregado"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, true
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable2.setColumnSelectionAllowed(true);
+        jTable2.setName(""); // NOI18N
+        jScrollPane3.setViewportView(jTable2);
+        jTable2.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+
+        jScrollPane2.setViewportView(jScrollPane3);
+
+        jButton2.setText("ENTREGAR");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Microsoft Tai Le", 1, 24)); // NOI18N
+        jLabel1.setText("ENTREGA DE RECOMPENSAS");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -74,37 +97,74 @@ public class consultarecompensa extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(101, 101, 101)
-                        .addComponent(jButton1))
+                        .addGap(488, 488, 488)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(74, Short.MAX_VALUE))
+                        .addGap(662, 662, 662)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(1202, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(92, 92, 92)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addContainerGap(302, Short.MAX_VALUE))
         );
+
+        jScrollPane2.getAccessibleContext().setAccessibleParent(jTable2);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        List<Recompensa> rec= consultarRecompensa();
-        ArrayList uno = new ArrayList();
+     servicio.Servicioenvios_Service service = new servicio.Servicioenvios_Service();
+        servicio.Servicioenvios port = service.getServicioenviosPort();
+        java.util.List<servicio.Recompensa> rec = port.consultarRecompensa();
+        DefaultTableModel modelo= (DefaultTableModel)jTable2.getModel();
+        jTable2.setModel(modelo);
         for(int i=0;i<rec.size();i++){
-            Recompensa recompensa= rec.get(i);
-            uno.add(recompensa.getCodIniciativa());
-            uno.add(recompensa.getDescripcion());
+            Object registro[]= new Object[8];
+            servicio.Recompensa recompensa= rec.get(i);
+            registro[0]= recompensa.getCodRecompensa();
+            registro[1]= recompensa.getStock();
+            registro[2]= recompensa.getPrecioUnidad();
+            registro[3]= recompensa.getDescripcion();
+            registro[4]= recompensa.getTipo();
+            registro[5]= recompensa.getEstado();
+            registro[6]= recompensa.getCodIniciativa();
+            registro[7]= false;
+            modelo.addRow(registro);
         }
-        DefaultTableModel modelo=
+        jButton1.setEnabled(false);
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        TableModel mod= jTable2.getModel();
+        int filas= mod.getRowCount();
+        servicio.Servicioenvios_Service service = new servicio.Servicioenvios_Service();
+        servicio.Servicioenvios port = service.getServicioenviosPort();
+        for(int i=0;i<filas;i++){
+            int cod_recompensa= Integer.parseInt(mod.getValueAt(i,0).toString());
+            String entregado= mod.getValueAt(i,7).toString();
+            if(entregado=="true"){
+                port.actualizarRecompensa(cod_recompensa);
+            }
+            
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -143,13 +203,23 @@ public class consultarecompensa extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTable jTable2;
+    private java.awt.Scrollbar scrollbar1;
     // End of variables declaration//GEN-END:variables
 
-    private static java.util.List<envios.Recompensa> consultarRecompensa() {
-        envios.Servicioenvios_Service service = new envios.Servicioenvios_Service();
-        envios.Servicioenvios port = service.getServicioenviosPort();
-        return port.consultarRecompensa();
-    }
+   
+
+    
+
+   
+ 
+
+   
+   
+   
 }
