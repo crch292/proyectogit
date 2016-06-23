@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://servicio/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicio/">
+
+<xs:element name="actualizarRecompensa" type="tns:actualizarRecompensa" />
+
+<xs:element name="actualizarRecompensaResponse" type="tns:actualizarRecompensaResponse" />
+
+<xs:element name="consultarRecompensa" type="tns:consultarRecompensa" />
+
+<xs:element name="consultarRecompensaResponse" type="tns:consultarRecompensaResponse" />
+
+<xs:complexType name="actualizarRecompensa">
+<xs:sequence>
+<xs:element name="cod_rec" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizarRecompensaResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="consultarRecompensa">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="consultarRecompensaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:recompensa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="recompensa">
+<xs:sequence>
+<xs:element name="cod_iniciativa" type="xs:int" />
+<xs:element name="cod_recompensa" type="xs:int" />
+<xs:element name="descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="entregado" type="xs:string" minOccurs="0" />
+<xs:element name="estado" type="xs:string" minOccurs="0" />
+<xs:element name="precio_unidad" type="xs:double" />
+<xs:element name="stock" type="xs:int" />
+<xs:element name="tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
